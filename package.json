@@ -1,0 +1,15 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "description": "Forms with ES5 transpiling",
+  "main": "",
+  "scripts": {
+    "build": "babel js/ES6 -d js/ES5"
+  },
+  "author": "Mihai Moraru",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}

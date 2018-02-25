@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,700');
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+    font: 16px/26px 'Work Sans', Helvetica Neue, Helvetica, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #ababab;
+}
+
+.title {
+    color: white;
+}
+
+
+/* ==========================================================================
+Styles
+========================================================================== */
+
+#keep-in-touch {
+    font-weight: 300;
+    background: linear-gradient(160deg, #fd0 25%, #98ef0e 50%, #fd0 75%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+@media (min-width: 720px) {
+    #keep-in-touch {
+        max-width: 640px;
+        margin: 100px auto 0;
+    }
+}
+
+
+/* ==========================================================================
+Form
+========================================================================== */
+
+legend {
+    font-size: 44px;
+    line-height: 44px;
+    margin-bottom: 30px;
+    text-shadow: .5px .5px #fff;
+}
+
+.form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -ms-box-pack: justify;
+    -moz-box-pack: justify;
+    margin: 0 0 20px;
+}
+
+.form-group label {
+    display: block;
+    margin: 0 0 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    line-height: 1;
+}
+
+.form-group input,
+.form-group select,
+#taggable {
+    outline: none;
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 20px;
+    color: rgba(0, 0, 0, 0.6);
+    transition: 0.3s ease;
+    /* reset */
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+#taggable {
+    cursor: text;
+}
+
+#taggable input {
+    border: 0;
+    display: inline-block;
+
+}
+
+#taggable input {
+    border: none;
+    display: inline-block;
+    width: auto;
+    background: none;
+    padding: 0;
+}
+
+.form-group input:focus {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+select::-ms-expand {
+    display: none;
+}
+.form__select--custom {
+    width: 100%;
+    position: relative;
+}
+.form__select--custom::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 13px;
+    pointer-events: none;
+    color: #001429;
+}
+.form__select--custom:hover::after {
+    color: #007ACE;
+}
+
+button {
+    outline: none;
+    user-select: none;
+    float: left;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    color: #888;
+    text-align: center;
+    transition: all 0.2s ease;
+    width: 100%;
+    font-size: 160%;
+    border: none;
+}
+
+button.submit {
+    line-height: 60px;
+    height: 65px;
+    background: #007ACE;
+    box-shadow: 0px 4px #084E8A;
+    color: #fff;
+    font-weight: 500;
+}
+
+button.submit:hover {
+    background: #007ACE;
+    box-shadow: 0px 4px #084E8A;
+    color: #001429;
+}
+
+button.submit:active {
+    box-shadow: 0px 0px #717a33;
+    top: 4px;
+}
+
+/* ==========================================================================
+Taggable
+========================================================================== */
+
+#taggable {
+    position: relative;
+}
+
+.tag {
+    cursor: pointer;
+    position: relative;
+    border-radius: 6px;
+    background: yellow;
+    color: #001429;
+    text-align: center;
+    padding: 3px 18px 3px 10px;
+    margin-right: 5px;
+}
+
+.tag:after {
+    content: "x";
+    font-size: 11px;
+    position: absolute;
+    top: -5px;
+    right: 5px;
+}
+
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+Print styles
+========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

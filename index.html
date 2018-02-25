@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+                <form action="" method="post" id="keep-in-touch" accept-charset="UTF-8">
+                    <fieldset>
+                        <legend>Tell us a bit about yourself</legend>
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="fullname" value="" size="15" maxlength="60" class="form-text required" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-address">E-mail</label>
+                            <input type="email" id="email-address" name="emailaddress" value="" size="15" maxlength="60" class="form-text required" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date-of-birth">Date of birth</label>
+                            <input type="date" id="date-of-birth" name="dateofbirth" class="form-text required" min="1900-01-01" max="2018-02-26" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                            <!-- Probably best to use an existing plugin for datepicker or something that will normalize the look and feel across browsers -->
+                        </div>
+                        <div class="form-group">
+                            <label for="fav-brands">Favourite Brands</label>
+                            <div  id="taggable">
+                                <input type="text" id="fav-brands" name="favouritebrands" value="" size="15" maxlength="60" class="form-text required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="selected-category">Categories </label>
+                            <div class="form__select--custom">
+                                <select id="selected-category" name="categories" onfocus="openSelect()" required>
+                                    <option value="">Select a category</option>
+                                    <option value="Science">Science</option>
+                                    <option value="Advertisement">Advertisement</option>
+                                    <option value="Politics">Politics</option>
+                                    <option value="Events">Events</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <div class="form-group">
+                            <button type="submit" id="edit-submit--2" class="submit">Keep in touch</button>
+                        </div>
+                    </div>
+                </form>
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+        <script src="js/ES6/main.js"></script>
+
+    </body>
+</html>
