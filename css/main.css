@@ -232,6 +232,7 @@ Taggable
 .tag {
     cursor: pointer;
     position: relative;
+    display: inline-block;
     border-radius: 6px;
     background: yellow;
     color: #001429;
